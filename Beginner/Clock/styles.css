@@ -16,7 +16,22 @@
     font-family: 'loopy', monospace;
 }
 
-#options{
+@media screen and (max-width: 600px) {
+    #time{
+        font-size: 4rem;
+        padding: 10px;
+        position: relative;
+        max-width: fit-content;
+        margin: auto;
+        border: 1px solid #333;
+        border-radius: 12px;
+        box-shadow: 0 0 20px #0006;
+        backdrop-filter: blur(5px);
+        font-family: 'loopy', monospace;
+    }
+}
+
+#options, #specificOptions{
     margin-top: 15px;
     text-align: center;
 }
@@ -31,6 +46,20 @@
     border-radius: 15px;
 }
 
+#specificOptions button{
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%,
+    rgba(255, 0, 0, 1) 0%, rgba(229, 9, 20, 1) 85%);
+    color: white;
+    border: 2px solid black;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+
 #options button:hover{
+    box-shadow: 0 0 10px #ff000099;
+}
+
+#specificOptions button:hover{
     box-shadow: 0 0 10px #ff000099;
 }
