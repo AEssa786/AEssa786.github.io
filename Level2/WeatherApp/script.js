@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let citySearched;
 
     async function fetchCurrentWeather(cityEntered){
-        const currentWeather = `http://api.weatherapi.com/v1/current.json?key=f70c5fafcca94db2b55114602250312&q=${cityEntered}`;
+        const currentWeather = `https://api.weatherapi.com/v1/current.json?key=f70c5fafcca94db2b55114602250312&q=${cityEntered}`;
         try{
             const res = await fetch(currentWeather);
             const data = await res.json();
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     async function fetchForecast(cityEntered){
-        const forecast = `http://api.weatherapi.com/v1/forecast.json?key=f70c5fafcca94db2b55114602250312&q=${cityEntered}&days=3`;
+        const forecast = `https://api.weatherapi.com/v1/forecast.json?key=f70c5fafcca94db2b55114602250312&q=${cityEntered}&days=3`;
         try{
             const res = await fetch(forecast);
             const data = await res.json();
