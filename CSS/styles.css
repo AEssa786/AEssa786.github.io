@@ -233,3 +233,90 @@ section p{
 #contact-form div{
     margin: 0 auto;
 }
+
+#disclaimer{
+    font-size: 12px;
+    color: var(--border-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.project-card p{
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#project-details{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#project-details h5{
+    font-size: 18px;
+    color: var(--accent-color);
+}
+
+#project-details img{
+    margin: auto;
+}
+
+#description{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: transparent;
+    width: 100%;
+}
+
+#skills{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: transparent;
+    width: 40%;
+    margin-right:7%;
+    margin-left: 4%
+}
+
+#skills li{
+    margin-bottom: 10px;
+}
+
+#purpose{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: transparent;
+    width: 40%;
+    margin-left: 5%;
+}
+
+#purpose li{
+    margin-bottom: 10px;
+}

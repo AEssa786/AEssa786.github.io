@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monthly Claim System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../CSS/styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar mb-4 p-3" id="nav-bar">
+            <div class="logo"><a href="../../index.html">AE</a></div>
+            <ul class="nav-list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../contact.html">Contact Me</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+            </ul>   
+        </nav>
+
+        <header>
+            <h3>Contract Monthly Claim System</h3>
+            <h4>Business rules enforcement + cloud storage integration.</h4>
+        </header>
+
+        <main>
+            <section id = "project-details">
+                <img src="Screenshot 2026-01-25 194208.png" width="800px"/>
+
+                <div id="description">
+                    <h5>Description</h5>
+                    <p>
+                        This project was developed as a workflow automation platform for 
+                        freelance lecturers to log their working hours, submit monthly claims,
+                         and track approvals. The system was designed to replace manual, error-prone 
+                         processes with a structured digital workflow
+                    </p>
+                    <p>
+                        Lecturers could submit claims with supporting documents, while coordinators 
+                        and managers reviewed and approved them. HR staff had oversight of the entire process.
+                         Role-based access was enforced using ASP Identity, ensuring each user type had 
+                         tailored permissions.
+                    </p>
+                    <p>
+                        The system also included business rules to maintain integrity: file upload 
+                        restrictions to prevent invalid submissions, claim flagging logic to highlight
+                         anomalies, and streamlined approval chains to reduce bottlenecks.
+                    </p>
+                    <p>
+                        This project demonstrated how ASP.NET MVC can be used to build enterprise-style 
+                        workflow systems, emphasizing business logic, role management, and process automation.
+                        A video of the project in action can be found <a href="https://youtu.be/MjVeBKyORTw" target="_blank">here</a>.
+                    </p>
+                </div>
+
+                <div id="skills">
+                    <h5>Technologies Used</h5>
+                    <ul>
+                        <li><b>ASP.NET MVC</b> - <br/>Core framework for building the application.</li>
+                        <li><b>Entity Framework</b> - <br/>Data access layer for the application.</li>
+                        <li><b>SQL Server</b> - <br/>Relational database for storing claims, users, and approvals.</li>
+                        <li><b>Microsoft Azure Tables</b> - <br/>NoSQL storage for lightweight data.</li>
+                        <li><b>Bootstrap</b> - <br/>Frontend styling for forms and dashboards.</li>
+                        <li><b>C#</b> - <br/>Backend logic and business rules.</li>
+                        <li><b>ASP Identity</b> - <br/>Role-based authentication and user management</li>
+                    </ul>
+                </div>
+
+                <div id="purpose">
+                    <h5>Purpose</h5>
+                    <p>
+                        The system was built to address inefficiencies in manual claim submission and 
+                        approval processes.
+                    </p>
+                    <ul>
+                        <li><b>For lecturers:</b> <br/>Provided a simple, secure way to log hours 
+                            and submit claims.</li>
+                        <li><b>For coordinators/managers:</b> <br/>Enabled structured review and 
+                            approval workflows</li>
+                        <li><b>For HR:</b> <br/>Offered oversight and reduced errors in payroll processing.</li>
+                        <li><b>For developers (learning outcome):</b> <br/>Showed how to enforce business 
+                            rules and role-based workflows in a real-world scenario.</li>        
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 My Website. All rights reserved.</p>
+        </footer>
+    </body>
+
+</html>
