@@ -320,7 +320,3 @@ section p{
 #purpose li{
     margin-bottom: 10px;
 }
-
-.project-card h5{
-    color: var(--accent-color)
-}
