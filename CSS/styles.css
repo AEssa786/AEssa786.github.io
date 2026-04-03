@@ -320,3 +320,95 @@ section p{
 #purpose li{
     margin-bottom: 10px;
 }
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  header {
+    width: 95%;
+    text-align: center;
+    top: 20px;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 24px;
+  }
+
+  header h4 {
+    font-size: 18px;
+  }
+
+  header h5 {
+    font-size: 14px;
+  }
+
+  #nav-bar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    width: 95%;
+    padding: 15px;
+  }
+
+  #latest-project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #latest-project {
+    width: 100%;
+    height: auto;
+  }
+
+  .quick-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #top-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  #projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills, #purpose {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  #contact-form {
+    width: 95%;
+  }
+}
