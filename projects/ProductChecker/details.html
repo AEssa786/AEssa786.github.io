@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PyBot</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../CSS/styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar mb-4 p-3" id="nav-bar">
+            <div class="logo"><a href="../../index.html">AE</a></div>
+            <ul class="nav-list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../contact.html">Contact Me</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+            </ul>   
+        </nav>
+
+        <header>
+            <h3>Automated Product Checker</h3>
+            <h4>Automated webscraper with CI/CD workflow.</h4>
+        </header>
+
+        <main>
+            <section id = "project-details">
+                <img src="Screenshot 2026-04-02 225433.png" width="800px"/>
+
+                <div id="description">
+                    <h5>Description</h5>
+                    <p>
+                        This project was built as an automation tool to monitor product availability 
+                        and notify users in real time. The bot scraped product pages daily, checked 
+                        stock status, and sent alerts directly to a Discord channel via webhook integration.
+                    </p>
+                    <p>
+                        The scraper was scheduled using GitHub Actions, ensuring it ran automatically without 
+                        manual intervention. Secrets were managed securely in the repository, preventing exposure 
+                        of sensitive data such as webhook URLs.
+                    </p>
+                    <p>
+                        The project evolved from a single-site stock checker into a multi-site monitoring tool, 
+                        capable of scanning several retailers simultaneously, with alerts sent directly to Discord. 
+                        Future enhancements include price comparison and sale detection.
+                    </p>
+                    <p>
+                        This project demonstrated how Python scripting, automation pipelines, and messaging 
+                        integrations can be combined to create practical, real-world tools. The code for this
+                        project can be viewed on my GitHub repository:
+                         <a href="https://github.com/AEssa786/PCStockCheck" target="_blank">PCStockCheck</a>
+                    </p>
+                </div>
+
+                <div id="skills">
+                    <h5>Technologies Used</h5>
+                    <ul>
+                        <li><b>Python</b> - <br/>Core language for building the scraper.</li>
+                        <li><b>Requests / BeautifulSoup</b> - <br/>Libraries for web scraping and parsing HTML</li>
+                        <li><b>GitHub Actions</b> - <br/> CI/CD pipeline for scheduled runs.</li>
+                        <li><b>Discord Webhooks</b> - <br/>Notification delivery system.</li>
+                        <li><b>GitHub Secrets</b> - <br/>Secure storage of sensitive credentials.</li>
+                    </ul>
+                </div>
+
+                <div id="purpose">
+                    <h5>Purpose</h5>
+                    <p>
+                        The bot was designed to solve the problem of manual product checking for 
+                        availability and sales of PC Components at the time when I was looking to build a PC.
+                    </p>
+                    <ul>
+                        <li><b>For Users:</b> <br/>Automated alerts reduced the need to constantly 
+                            refresh product pages.</li>
+                        <li><b>For developers (learning outcome):</b> <br/>Showed how to combine web scraping 
+                            with CI/CD pipelines and secure credential management.</li>        
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 My Website. All rights reserved.</p>
+        </footer>
+    </body>
+
+</html>
