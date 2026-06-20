@@ -24,7 +24,6 @@
 
 body{
     @apply bg-bg-dark text-primary antialiased;
-    width: 90%;
     margin: 0 auto;
 }
 
