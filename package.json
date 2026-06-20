@@ -1,0 +1,29 @@
+{
+  "name": "aessa786.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AEssa786/AEssa786.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AEssa786/AEssa786.github.io/issues"
+  },
+  "homepage": "https://github.com/AEssa786/AEssa786.github.io#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "tailwindcss": "^4.3.1",
+    "vite": "^8.0.16",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}

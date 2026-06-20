@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PyBot | Abdullah Essa</title>
+        <meta name="description" content="A webscraper combined with an automation bot using BeautifulSoup, Discord webhooks and Github Actions">
+        <link rel="stylesheet" href="../../../CSS/styles.css">
+    </head>
+
+    <nav>
+        <div id="nav-placeholder"></div>
+        <load src="../../nav.html" />
+    </nav>
+
+    <body>
+
+        <header class="relative mx-auto text-center md:text-center w-[95%] md:w-[75%] justify-center bg-transparent top-2">
+            <h3 class="text-[24px] md:text-[40px] font-bold mb-2.5 text-primary font-boska">Automated Product Checker</h3>
+            <h4 class="text-[18px] md:text-[2h-4px] text-border-custom font-satoshi">Automated webscraper with CI/CD workflow.</h4>
+        </header>
+
+        <main class="mt-8">
+            <section class="flex gap-5 flex-wrap">
+                <img src="Assets/images/Screenshot 2026-04-02 225433.png" width="800px"  class="border border-border-custom rounded-lg p-1 bg-transparent w-100% mx-auto"/>
+
+                <div class="border border-border-custom text-[18px] rounded-lg p-3.75 bg-transparent w-[70%] mx-auto">
+                    <h5 class="text-accent text-[22px]">Description</h5>
+                    <p class="mb-2.5">
+                        This project was built as an automation tool to monitor product availability 
+                        and notify users in real time. The bot scraped product pages daily, checked 
+                        stock status, and sent alerts directly to a Discord channel via webhook integration.
+                    </p>
+                    <p class="mb-2.5">
+                        The scraper was scheduled using GitHub Actions, ensuring it ran automatically without 
+                        manual intervention. Secrets were managed securely in the repository, preventing exposure 
+                        of sensitive data such as webhook URLs.
+                    </p>
+                    <p class="mb-2.5">
+                        The project focused on a single-site stock checker for Evetech, serving as a practical 
+                        exercise in combining Python scripting with CI/CD automation and secure credential management. 
+                        While it was not designed for multi-site expansion, it successfully demonstrated how automation 
+                        pipelines and messaging integrations can be applied to real-world use cases.
+                    </p>
+                    <p>
+                        This project highlighted skills in Python scripting, GitHub Actions, and secure integrations. 
+                        The code for this project can be viewed on my GitHub repository: 
+                        <a href="https://github.com/AEssa786/PCStockCheck" target="_blank">PCStockCheck</a>
+                    </p>
+                </div>
+
+                <div class="border border-border-custom rounded-lg p-3.75 bg-transparent w-full md:w-[20%] h-auto mr-[7&] ml-[18%]">
+                    <h5 class="text-[20px] text-accent mb-2.5">Technologies Used</h5>
+                    <ul class="[&_li]:mb-2.5">
+                        <li><b>Python</b> - <br/>Core language for building the scraper.</li>
+                        <li><b>Requests / BeautifulSoup</b> - <br/>Libraries for web scraping and parsing HTML</li>
+                        <li><b>GitHub Actions</b> - <br/> CI/CD pipeline for scheduled runs.</li>
+                        <li><b>Discord Webhooks</b> - <br/>Notification delivery system.</li>
+                        <li><b>GitHub Secrets</b> - <br/>Secure storage of sensitive credentials.</li>
+                    </ul>
+                </div>
+
+                <div class="border border-border-custom rounded-lg p-3.75 bg-transparent w-full md:w-[30%] h-auto mr-[7&] ml-[12%]">
+                    <h5 class="text-[20px] text-accent">Purpose</h5>
+                    <p class="mb-2.5 mt-2.5">
+                        The bot was designed to solve the problem of manual product checking for 
+                        availability and sales of PC Components at the time when I was looking to build a PC.
+                    </p>
+                    <ul class="[&_li]:mb-2.5">
+                        <li><b>For Users:</b> <br/>Automated alerts reduced the need to constantly 
+                            refresh product pages.</li>
+                        <li><b>For developers (learning outcome):</b> <br/>Showed how to combine web scraping 
+                            with CI/CD pipelines and secure credential management.</li>        
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <load src="../../footer.html" />
+        </footer>
+    </body>
+
+</html>
