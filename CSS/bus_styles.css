@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import url(boska.css);
+@import url(satoshi.css);
+
+@theme {
+    --color-primary: #c7d6ea;
+    --color-border-custom: #ec4899;
+    --color-accent: #8b5cf6;
+    --color-bg-dark: #020308;
+
+    --font-boska: 'Boska-Medium', serif;
+    --font-satoshi: 'satoshi-regular', sans-serif;
+    --font-satoshi-light: 'Satoshi-Light', sans-serif;
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+}
+
+@utility animate-blink {
+    animation: blink 1s step-end infinite;
+}
+
+body{
+    @apply bg-bg-dark text-primary antialiased;
+    margin: 0 auto;
+}
+
+a{
+    @apply font-mono text-primary transition-colors duration-200;
+}
+
+a:hover{
+    @apply text-accent no-underline;
+}
+
