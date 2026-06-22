@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Abdullah Essa | Software Engineer Portfolio</title>
-        <meta name="description" content="Abdullah Essa - Website developer and custom Software developer">
+        <meta name="description" content="Abdullah Essa - Website developer and custom Software developer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="Assets/images/logo.png">
         <script type="application/ld+json">
             {
@@ -24,57 +25,252 @@
                 }
             }
         </script>
-      <link rel="stylesheet" crossorigin href="/assets/main-BdxDAjAs.css">
+        <script src="https://kit.fontawesome.com/658a0b1268.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" crossorigin href="/assets/main-BEBjnXi1.css">
     </head>
 
     <nav>
         <div id="nav-placeholder"></div>
         <nav class="sticky top-0 z-50 w-full md:w-[70%] mx-auto flex flex-col md:flex-row justify-between items-center py-2 px-4 bg-transparent">
     <div class="logo mb-2 md:mb-0">
-        <a href="index.html" class="no-underline transition-colors duration-200">
-            <h1 class="font-mono text-accent text-[50px]">AE</h1>
+        <a href="#header" class="no-underline transition-colors duration-200">
+            <img src="/assets/BigLogo-B9wT5NoJ.png" class="h-30 border border-none">
         </a>
     </div>
     <ul class="flex items-center gap-4 list-none m-0 p-0 font-mono text-[1em]">
         <li>
-            <a href="/Portfolio/index.html" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Home</a>
+            <a href="#Services" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Services</a>
         </li>
         <li>
-            <a href="/Portfolio/contact.html" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Contact Me</a>
+            <a href="#Contact" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Contact Me</a>
         </li>
         <li>
-            <a href="/Portfolio/projects.html" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Projects</a>
+            <a href="#Projects" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Projects</a>
         </li>
         <li>
             <a href="Portfolio/index.html" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Dev Portfolio</a>
         </li>
-    </ul>   
+    </ul>
+    <div>
+        <a href="https://wa.me/+27837878350" target="_blank" class="px-2 py-1 md:px-3 md:py-1.5 bg-accent md:text-[23px] text-[20px] tracking-wide font-semibold text-primary rounded-full hover:bg-bg-dark hover:border hover:border-accent hover:cursor-pointer"><span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Contact Me</span></a>
+    </div>   
 </nav>
     </nav>
 
-    <body>
+    <body class="px-4 sm:px-6 md:px-0">
         
-        <header class="relative items-center flex flex-row w-[80%] mx-auto">
-            <div class="w-[45%] mr-[5%]">
-                <h1 class="text-primary text-[90px]">Your Custom Software Partner</h1>
-                <h5 class="text-[25px]">E-commerce stores, custom business systems, or 
+        <!-- Hero Section: Stacks vertically on mobile with image on top, side-by-side on desktop -->
+        <header class="relative items-center flex flex-col-reverse md:flex-row w-full md:w-[80%] mx-auto mt-6 md:mt-0" id="header">
+            <div class="w-full md:w-[45%] md:mr-[5%] text-center md:text-left mt-8 md:mt-0">
+                <h1 class="text-primary text-4xl sm:text-6xl md:text-[90px] leading-tight md:leading-none">Your Custom Software partner</h1>
+                <h5 class="text-lg sm:text-xl md:text-[25px] text-secondary mt-4 md:mt-0">E-commerce stores, custom business systems, or 
                     tailored Android apps — getting your software built right shouldn't 
                     be a headache.</h5>
+                <div class="flex flex-row mt-6 md:mt-3 justify-center md:justify-start">
+                    <a href="https://wa.me/+27837878350" target="_blank" class="px-2 py-1 md:px-4 md:py-2.5 tracking-wide bg-accent text-xl sm:text-2xl md:text-[28px] font-semibold text-primary rounded-full hover:bg-bg-dark hover:border hover:border-accent hover:cursor-pointer"><span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Let's Build</span></a>
+                    <a href="#Projects" class="px-2 py-1 md:px-4 md:py-2.5 bg-transparent text-xl sm:text-2xl md:text-[28px] font-semibold ml-4 tracking-wide text-primary border border-accent rounded-full hover:bg-accent hover:cursor-pointer"><span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Past Projects</span></a> 
+                </div>
             </div>
-            <div class="w-[50%]">
-                <img src="/assets/image-IsPnM0kd.png" class="">
+            <div class="w-full max-w-md md:max-w-none md:w-[50%] mx-auto">
+                <img src="/assets/HeroImage-BrdK77Fw.png" class="drop-shadow-[0_5px_5px_rgba(2,132,199,0.8)] w-full h-auto">
             </div>
         </header>
 
-        <main class="mt-8 mx-auto w-[300px]">
+        <main class="mt-8 mx-auto w-full md:w-[80%]">
+
+            <!-- Services Section: Already scales correctly due to Tailwind grid structure -->
+            <section id="Services" class="max-w-6xl mx-auto py-12 md:py-20">
+                <div class="max-w-xl mb-12 md:mb-16 text-center md:text-left">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-accent">Offers</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">
+                        What Can I Do For You?
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 border-t border-zinc-800">
+                    <div class="py-8 md:py-12 md:pr-8 flex flex-col justify-between min-h-65 border-b md:border-b-0 border-zinc-800">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white tracking-tight">Web Development</h3>
+                            <p class="mt-4 text-xl leading-relaxed text-zinc-400">
+                                Single Page Site? Fully Functional Online Store? Something in-between or More? Your business needs it, I'll build!
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <a href="#packages" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-[#0EA5E9] transition-colors duration-200">
+                                View Packages <span class="text-xs">↓</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="py-8 md:py-12 md:px-8 border-b md:border-b-0 md:border-x border-zinc-800 flex flex-col justify-between min-h-65">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white tracking-tight">Android Applications</h3>
+                            <p class="mt-4 text-xl leading-relaxed text-zinc-400">
+                                Native Android Development, Focused exclusively on high-performance native Android viewports. Giving your Customers Constant Access to Your Business!
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <a href="https://wa.me/+27837878350" target="_blank" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-[#0EA5E9] transition-colors duration-200">
+                                Get a Quote <span class="text-xs">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="py-8 md:py-12 md:pl-8 flex flex-col justify-between min-h-65">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white tracking-tight">Custom Solutions</h3>
+                            <p class="mt-4 text-xl leading-relaxed text-zinc-400">
+                                Your Business is Innovative, Your System Should Be to. Custom Systems Built to Address Specific Needs for Your Business.
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <a href="https://wa.me/+27837878350" class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:text-[#0EA5E9] transition-colors duration-200">
+                                Get a Quote <span class="text-xs">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
-            <p>This is a work in Progress. For now, explore my developer side:</p>
-            <a href="Portfolio/index.html" class="underline decoration-accent">Dev Portfolio</a>
+            <!-- Packages Section: Columns collapse cleanly on mobile layout viewports -->
+            <section id="packages" class="py-12 md:py-20">
+                <div class="mb-12 md:mb-16 text-center md:text-left">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-accent">Packages</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">
+                        Premade Web Development Packages
+                    </h2>
+                    <p class="text-zinc-500 mt-1">*All Prices are for Development Only. Hosting, Domain and Other Fees Not Included.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-0">
+                    <div class="border border-secondary px-5 py-3 w-full md:w-[30%] md:mr-[3%]">
+                        <h3 class="text-accent text-3xl text-center font-semibold mb-3">Starter</h3>
+                        <ul class="list-disc ml-5">
+                            <li>Single-Page Website</li>
+                            <li>Email Contact Form and Link to Social Media (including WhatsApp)</li>
+                            <li>Google Search Console Setup</li>
+                        </ul>
+                    </div>
+
+                    <div class="border border-secondary px-5 py-3 w-full md:w-[30%] md:mr-[3%]">
+                        <h3 class="text-accent text-3xl text-center font-semibold mb-3">Growth</h3>
+                        <ul class="list-disc ml-5">
+                            <li>Multi-Page Website (Upto 5 Pages)</li>
+                            <li>Business Email Setup</li>
+                            <li>All Features of Starter</li>
+                        </ul>
+                    </div>
+
+                    <div class="border border-secondary px-5 py-3 w-full md:w-[30%] md:mr-[3%]">
+                        <h3 class="text-accent text-3xl text-center font-semibold mb-3">Premium</h3>
+                        <ul class="list-disc ml-5">
+                            <li>Full Scale Web Apps</li>
+                            <li>Online Stores and Dashboards</li>
+                            <li>Third Party Integrations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="hover:cursor-pointer block text-center" href="https://wa.me/+27837878350" target="_blank">
+                    <p class="mx-auto w-full max-w-md md:w-125 mt-10 text-2xl border border-dashed border-accent/30 py-3 rounded-xl md:border-none md:py-0">Contact Me Today To Get Started!</p>
+                </a>
+            </section>
+
+            <!-- Projects Section: Alternate stacking grid system handles full column mobile blocks -->
+            <section id="Projects" class="py-10">
+                <div class="max-w-xl mb-12 md:mb-16 text-center md:text-left">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-accent">Projects</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">
+                        What have I done before?
+                    </h2>
+                </div>
+
+                <!-- Project Item 1 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-0">
+                    <div class="relative w-full md:w-[50%] rounded-xl overflow-hidden border border-zinc-800 bg-bg-dark shadow-2xl group">
+                        <video controls preload="metadata" poster="/assets/ClaimThumbnail-UZFKIFkQ.png" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
+                            <source src="/assets/Lecturer%20Monthly%20Claim%20System-BUXXbcSM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="w-full md:w-[50%] text-center my-auto px-2">
+                        <h2 class="text-2xl sm:text-4xl">Automated Staff Hours & Claim Management</h2>
+                        <h3 class="text-xl sm:text-2xl text-accent mt-1">Monthly Claim System</h3>
+                        <p class="mt-4 text-secondary w-full md:w-[80%] mx-auto">
+                            A centralized workflow portal built to completely streamline internal 
+                            administration. Independent contractors can digitally log their active hours, 
+                            attach supporting documents, and submit monthly claims directly through the system.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 (Uses reverse columns order natively on mobile devices) -->
+                <div class="flex flex-col-reverse md:flex-row mt-16 md:mt-10 gap-6 md:gap-0">
+                    <div class="w-full md:w-[50%] text-center my-auto px-2">
+                        <h2 class="text-2xl sm:text-4xl">Team Collaboration Hub</h2>
+                        <h3 class="text-xl sm:text-2xl text-accent mt-1">FileSec</h3>
+                        <p class="mt-4 text-secondary w-full md:w-[80%] mx-auto">
+                            A private, secure digital space that natively merges file management with instant 
+                            communication. Instead of downloading a document from one app to discuss it on another, 
+                            teams can upload assets directly into dedicated client channels.
+                        </p>
+                    </div>
+                    <div class="relative w-full md:w-[50%] rounded-xl overflow-hidden border border-zinc-800 bg-bg-dark shadow-2xl group">
+                        <video controls preload="metadata" poster="/assets/FileSecThumbnail-BDXYXpGn.png" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
+                            <source src="/assets/FileSecShow-Bd_DHHZH.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 -->
+                <div class="flex flex-col md:flex-row mt-16 md:mt-10 gap-6 md:gap-0">
+                    <div class="relative w-full md:w-[50%] rounded-xl overflow-hidden border border-zinc-800 bg-bg-dark shadow-2xl group">
+                        <video controls preload="metadata" poster="/assets/Screenshot_20260620_171022_Goblin%20Pouch-DZ_JvnvZ.jpg" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
+                            <source src="/assets/GoblinVideo-BaUz-2EP.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="w-full md:w-[50%] text-center my-auto px-2">
+                        <h2 class="text-2xl sm:text-4xl">Mobile Budgeting Platform</h2>
+                        <h3 class="text-xl sm:text-2xl text-accent mt-1">Goblin Pouch</h3>
+                        <p class="mt-4 text-secondary w-full md:w-[80%] mx-auto">
+                            An interactive, consumer-facing mobile application designed to simplify financial management for 
+                            individuals and groups. The app features secure personal account creation, real-time receipt 
+                            uploads, and highly collaborative shared group dashboards.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-16 border-t border-secondary py-5 w-full max-w-xl md:w-175 mx-auto text-center">
+                    More Projects Can Be Found On My Personal Portfolio <a href="Portfolio/index.html" class="hover:cursor-pointer"><span class="underline decoration-accent">Here</span></a>
+                </div>
+            </section>
+
+            <!-- Contact Section: Stacks the platform contact cards beautifully on phone viewports -->
+            <section id="Contact" class="py-12 md:py-20">
+                <div class="text-center pb-8 border-b border-secondary">
+                    <h1 class="text-primary text-3xl sm:text-5xl md:text-[70px]">Ready to Enter the Digital Age?</h1>
+                    <h3 class="text-accent text-2xl sm:text-3xl md:text-[50px] mt-2">Let's talk!</h3>
+                </div>
+                <div class="flex flex-col md:flex-row mx-auto w-full max-w-md md:w-125 mt-8 gap-8 md:gap-0 items-center justify-between">
+                    <div class="w-full md:w-[45%] text-center">
+                        <img src="/assets/WhatsappIcon-DlXWbfk-.png" class="mx-auto h-20 border rounded-lg object-contain"/>
+                        <p class="text-xl mt-3">+27 83 787 8350</p>
+                    </div>
+                    
+                    <div class="w-full md:w-[45%] text-center">
+                        <img src="/assets/email-CsevLiJg.png" class="mx-auto px-3 h-20 border rounded-lg object-contain"/>
+                        <p class="text-xl mt-3">contact@abdullahessa.dev</p>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
-        <footer>
-            <p>&copy; 2026 My Website. All rights reserved.</p>
+        <footer class="relative bottom-0 w-full bg-transparent text-center py-4 border-t border-accent">
+            <a href="https://wa.me/+27837878350"><i class="fa-brands fa-whatsapp text-accent hover:text-primary text-[20px] mr-4"></i></a>
+            <a href="mailto:contact@abdullahessa.dev"><i class="fa-regular fa-envelope text-accent hover:text-primary text-[20px]"></i></a>
         </footer>
     </body>
 

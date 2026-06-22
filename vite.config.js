@@ -11,10 +11,6 @@ export default defineConfig({
     rollupOptions:{
         input: {
             main: "index.html",
-            services: "services.html",
-            projects: "projects.html",
-            contact: "contact.html",
-            form_complete: "form-complete.html",
 
             portfolio: "Portfolio/index.html",
             portfolio_projects: "Portfolio/projects.html",
