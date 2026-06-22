@@ -26,7 +26,27 @@
             }
         </script>
         <script src="https://kit.fontawesome.com/658a0b1268.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" crossorigin href="/assets/main-BEBjnXi1.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Turn visibility on and shift up
+                            entry.target.classList.remove('opacity-0', 'translate-y-8');
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                        }
+                    });
+                }, { threshold: 0.15 }); // Triggers when 15% of the section is visible
+
+                // Target all main sections
+                document.querySelectorAll('header, section').forEach(section => {
+                    // Set initial state: hidden and pushed down slightly
+                    section.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-800', 'ease-out');
+                    observer.observe(section);
+                });
+            });
+        </script>
+      <link rel="stylesheet" crossorigin href="/assets/main-C6czlzAW.css">
     </head>
 
     <nav>
@@ -39,16 +59,16 @@
     </div>
     <ul class="flex items-center gap-4 list-none m-0 p-0 font-mono text-[1em]">
         <li>
-            <a href="#Services" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Services</a>
+            <a href="#Services" class="text-primary md:text-2xl no-underline transition-colors duration-200 md:mr-3 hover:text-border-custom hover:italic">Services</a>
         </li>
         <li>
-            <a href="#Contact" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Contact Me</a>
+            <a href="#Contact" class="text-primary no-underline md:text-2xl transition-colors duration-200 md:mr-3 hover:text-border-custom hover:italic">Contact Me</a>
         </li>
         <li>
-            <a href="#Projects" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Projects</a>
+            <a href="#Projects" class="text-primary no-underline md:text-2xl transition-colors duration-200 md:mr-3 hover:text-border-custom hover:italic">Projects</a>
         </li>
         <li>
-            <a href="Portfolio/index.html" class="text-primary no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Dev Portfolio</a>
+            <a href="Portfolio/index.html" class="text-primary md:text-2xl no-underline transition-colors duration-200 hover:text-border-custom hover:italic">Dev Portfolio</a>
         </li>
     </ul>
     <div>
@@ -63,10 +83,10 @@
         <header class="relative items-center flex flex-col-reverse md:flex-row w-full md:w-[80%] mx-auto mt-6 md:mt-0" id="header">
             <div class="w-full md:w-[45%] md:mr-[5%] text-center md:text-left mt-8 md:mt-0">
                 <h1 class="text-primary text-4xl sm:text-6xl md:text-[90px] leading-tight md:leading-none">Your Custom Software partner</h1>
-                <h5 class="text-lg sm:text-xl md:text-[25px] text-secondary mt-4 md:mt-0">E-commerce stores, custom business systems, or 
+                <h5 class="text-lg sm:text-xl md:text-[25px] text-secondary mt-4 md:mt-2">E-commerce stores, custom business systems, or 
                     tailored Android apps — getting your software built right shouldn't 
                     be a headache.</h5>
-                <div class="flex flex-row mt-6 md:mt-3 justify-center md:justify-start">
+                <div class="flex flex-row mt-6 md:mt-6 justify-center md:justify-start">
                     <a href="https://wa.me/+27837878350" target="_blank" class="px-2 py-1 md:px-4 md:py-2.5 tracking-wide bg-accent text-xl sm:text-2xl md:text-[28px] font-semibold text-primary rounded-full hover:bg-bg-dark hover:border hover:border-accent hover:cursor-pointer"><span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Let's Build</span></a>
                     <a href="#Projects" class="px-2 py-1 md:px-4 md:py-2.5 bg-transparent text-xl sm:text-2xl md:text-[28px] font-semibold ml-4 tracking-wide text-primary border border-accent rounded-full hover:bg-accent hover:cursor-pointer"><span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Past Projects</span></a> 
                 </div>
@@ -226,7 +246,7 @@
                 <!-- Project Item 3 -->
                 <div class="flex flex-col md:flex-row mt-16 md:mt-10 gap-6 md:gap-0">
                     <div class="relative w-full md:w-[50%] rounded-xl overflow-hidden border border-zinc-800 bg-bg-dark shadow-2xl group">
-                        <video controls preload="metadata" poster="/assets/Screenshot_20260620_171022_Goblin%20Pouch-DZ_JvnvZ.jpg" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
+                        <video controls preload="metadata" poster="/assets/GoblinThumbnail-DZ_JvnvZ.jpg" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
                             <source src="/assets/GoblinVideo-BaUz-2EP.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
