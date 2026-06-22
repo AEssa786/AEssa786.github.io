@@ -4,9 +4,11 @@
 
 @theme {
     --color-primary: #c7d6ea;
+    --color-secondary: #94A3B8;
     --color-border-custom: #ec4899;
-    --color-accent: #8b5cf6;
+    --color-accent: #0284C7;
     --color-bg-dark: #020308;
+    --color-card: #0B111E;
 
     --font-boska: 'Boska-Medium', serif;
     --font-satoshi: 'satoshi-regular', sans-serif;
