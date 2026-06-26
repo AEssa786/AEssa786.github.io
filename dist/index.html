@@ -19,7 +19,7 @@
         <link rel="apple-touch-icon"
         href="/assets/SmallLogo-BdOMTCMT.png">
         <meta property="og:title" content="Abdullah Essa | Web Developer">
-        <meta property="og:description" content="Professional websites and custom software for businesses.">
+        <meta property="og:description" content="Professional web developer building fast, modern websites and custom software for businesses in South Africa. Responsive, SEO-friendly and tailored to your needs.">
         <meta property="og:image" content="https://abdullahessa.dev/Assets/images/SmallLogo.png">
         <meta property="og:url" content="https://abdullahessa.dev">
         <meta property="og:type" content="website">
@@ -27,11 +27,12 @@
         <meta property="og:site_name" content="AE Systems">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Abdullah Essa | Web Developer">
-        <meta name="twitter:description" content="Professional websites and custom software.">
+        <meta name="twitter:description" content="Professional web developer building fast, modern websites and custom software for businesses in South Africa. Responsive, SEO-friendly and tailored to your needs.">
         <meta name="twitter:image" content="https://abdullahessa.dev/Assets/images/SmallLogo.png">
         <meta name="twitter:image:alt"
             content="Professional web development and custom software services">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="preload" fetchpriority="high" as="image" href="/assets/HeroImage-BSQ9OkKO.webp" type="image/webp">
         <link rel="icon" type="image/png" href="/assets/SmallLogo-BdOMTCMT.png" />
         <meta name="robots" content="index, follow">
         <meta name="theme-color" content="#0284C7" />
@@ -83,7 +84,7 @@
                 }
             }
         </script>
-        <script src="https://kit.fontawesome.com/658a0b1268.js" crossorigin="anonymous"></script>
+        <script defer src="https://kit.fontawesome.com/658a0b1268.js" crossorigin="anonymous"></script>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const observer = new IntersectionObserver((entries) => {
@@ -107,8 +108,9 @@
       <link rel="stylesheet" crossorigin href="/assets/main-xC2j1XKd.css">
     </head>
 
-    <nav>
-        <div id="nav-placeholder"></div>
+
+    <body class="px-4 sm:px-6 md:px-0">
+        
         <nav class="sticky top-0 z-50 w-full md:w-[70%] mx-auto flex flex-wrap md:flex-nowrap justify-between items-center py-2 px-4 bg-transparent backdrop-blur-md">
     
     <div class="logo z-50">
@@ -163,10 +165,7 @@
         </div>
     </div>   
 </nav>
-    </nav>
 
-    <body class="px-4 sm:px-6 md:px-0">
-        
         <!-- Hero Section: Stacks vertically on mobile with image on top, side-by-side on desktop -->
         <header class="relative items-center flex flex-col-reverse md:flex-row w-full md:w-[80%] mx-auto mt-6 md:mt-0" id="header">
             <div class="w-full md:w-[50%]  text-center md:text-left mt-8 md:mt-0">
@@ -211,7 +210,7 @@
             </div>
             
             <div class="w-full max-w-md md:max-w-none md:w-[50%] mx-auto">
-                <img src="/assets/HeroImage-BrdK77Fw.png" alt="Professional web developer creating custom websites and software" class="drop-shadow-[0_5px_5px_rgba(2,132,199,0.8)] w-full h-auto">
+                <img src="/assets/HeroImage-BSQ9OkKO.webp" alt="Professional web developer creating custom websites and software" class="drop-shadow-[0_5px_5px_rgba(2,132,199,0.8)] w-full h-auto">
             </div>
         </header>
 
@@ -333,7 +332,7 @@
                 <!-- Project Item 1 -->
                 <div class="flex flex-col md:flex-row gap-6 md:gap-0">
                     <div class="relative w-full md:w-[50%] rounded-xl overflow-hidden border border-zinc-800 bg-bg-dark shadow-2xl group">
-                        <video controls preload="metadata" poster="/assets/ClaimThumbnail-UZFKIFkQ.png" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
+                        <video controls preload="metadata"  poster="/assets/ClaimThumbnail-UZFKIFkQ.png" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-[1.01]">
                             <source src="/assets/Lecturer%20Monthly%20Claim%20System-BUXXbcSM.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -400,17 +399,17 @@
                 </div>
                 <div class="flex flex-col md:flex-row mx-auto w-full  md:w-full mt-8 gap-8 md:gap-0 items-center justify-between">
                     <div class="w-full md:w-[33%] text-center md:mr-10">
-                        <img src="/assets/WhatsappIcon-DlXWbfk-.png" class="mx-auto h-20 border rounded-lg object-contain"/>
+                        <img src="/assets/WhatsappIcon-DlXWbfk-.png" loading="lazy" alt="WhatsApp Contact" class="mx-auto h-20 border rounded-lg object-contain"/>
                         <p class="text-xl mt-3">+27 83 787 8350</p>
                     </div>
 
                     <div class="w-full md:w-[33%] text-center md:mr-10 md:ml-5">
-                        <img src="/assets/instagram-DmSHMTbR.png" class="mx-auto px-3 h-20 border rounded-lg object-contain"/>
+                        <img src="/assets/instagram-DmSHMTbR.png" loading="lazy" alt="instagram Account" class="mx-auto px-3 h-20 border rounded-lg object-contain"/>
                         <p class="text-xl mt-3">@ae_digital_systems</p>
                     </div>
 
                     <div class="w-full md:w-[33%] text-center md:ml-5">
-                        <img src="/assets/email-CsevLiJg.png" class="mx-auto px-3 h-20 border rounded-lg object-contain"/>
+                        <img src="/assets/email-CsevLiJg.png" loading="lazy" alt="Email Address" class="mx-auto px-3 h-20 border rounded-lg object-contain"/>
                         <p class="text-xl mt-3">contact@abdullahessa.dev</p>
                     </div>
                     
@@ -426,36 +425,21 @@
             <a href="mailto:contact@abdullahessa.dev" onclick="gtag('event', 'email_click');"><i class="fa-regular fa-envelope text-accent hover:text-primary text-[20px]"></i></a>
         </footer>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const menuBtn = document.getElementById('mobile-menu-btn');
-                const navLinks = document.getElementById('nav-links-container');
-                const menuIcon = menuBtn.querySelector('i');
+         <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navContainer = document.querySelector('nav ul');
 
-                menuBtn.addEventListener('click', () => {
-                    // Toggle the dropdown menu visibility
-                    navLinks.classList.toggle('active');
-                    
-                    // Toggle the icon between Hamburger and 'X' close mark
-                    if (navLinks.classList.contains('active')) {
-                        menuIcon.classList.remove('fa-bars');
-                        menuIcon.classList.add('fa-xmark');
-                    } else {
-                        menuIcon.classList.remove('fa-xmark');
-                        menuIcon.classList.add('fa-bars');
-                    }
-                });
-
-                // Optional: Close the menu automatically when a user clicks a link
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        navLinks.classList.remove('active');
-                        menuIcon.classList.remove('fa-xmark');
-                        menuIcon.classList.add('fa-bars');
-                    });
+        if (menuToggle && navContainer) {
+            // Uncheck the menu toggle whenever an internal link inside the menu is clicked
+            navContainer.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.checked = false;
                 });
             });
-        </script>
+        }
+    });
+</script>     
 
     </body>
 
