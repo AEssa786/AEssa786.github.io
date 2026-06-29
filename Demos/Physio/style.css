@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url(boska.css);
+@import url(satoshi.css);
+
+@theme {
+    --color-primary: #093C5D;
+    --color-secondary: #EEEEEE;
+    --color-border-custom: #24B1B1;
+    --color-accent: #121358;
+    --color-bg-light: #F9F8F6;
+    --color-card: #0B111E;
+
+    --font-boska: 'Boska-Medium', serif;
+    --font-satoshi: 'satoshi-regular', sans-serif;
+    --font-satoshi-light: 'Satoshi-Light', sans-serif;
+}
+
+body{
+    @apply bg-bg-light text-primary antialiased;
+    margin: 0 auto;
+}
+
+nav a{
+    @apply font-mono text-secondary transition-colors duration-200;
+}
+
+nav a:hover{
+    @apply  no-underline;
+}
+

@@ -25,6 +25,11 @@ export default defineConfig({
           productChecker: 'Portfolio/projects/ProductChecker/details.html',
           secureFileShare: 'Portfolio/projects/SecureFileShare/details.html',
 
+          physioHome: "Demos/Physio/home.html",
+          physioServices: "Demos/Physio/services.html",
+          physioContact: "Demos/Physio/contact.html",
+          physioAbout: "Demos/Physio/about.html",
+
         }
     }
   }

@@ -1,36 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en_ZA">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMKKQ7JEHH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WMKKQ7JEHH');
-</script>
-        <title>Abdullah Essa | Contact</title>
-        <meta name="description" content="Abdullah Essa - Final-year Computer Science student at Emeris Sandton. Portfolio showcasing projects in ASP.NET, SignalR, automation, and cybersecurity.">
-        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Physio Site Demo</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
 
-    <body>
+    <body class="px-4 sm:px-6 md:px-0 w-[80%]">
+
         <nav>
             <div id="nav-placeholder"></div>
             <load src="./nav.html" />
         </nav>
 
-        <header class="relative mx-auto text-center md:text-center w-[95%] md:w-[75%] justify-center bg-transparent top-2">
-            <h3 class="text-[24px] md:text-[40px] font-bold mb-2.5 text-primary font-boska">Want to Contact me?</h3>
-            <h4 class="text-[18px] md:text-[2h-4px] text-border-custom font-satoshi">Fill in the form below and I'll get back to you as soon as possible!</h4>
+        <header class="relative items-center flex flex-col-reverse md:flex-col w-full md:w-[80%] mx-auto top-7 mt-6 md:mt-0">
+            <div class="mx-auto w-[80%]">
+                <h2 class="text-5xl font-semibold mt-5 w-fit mx-auto">Contact Us, Get Back Out There!</h2>
         </header>
 
         <main class="mt-8">
-            <section class="relative w-[95%] md:w-[75%] mx-auto mt-3.75 p-3.75 md:p-7.5 rounded-lg border-b border-border-custom text-left bg-transparent">
+            <section class="relative w-[95%] md:w-[75%] mx-auto mt-3.75 p-3.75 md:p-7.5 rounded-lg  text-left bg-transparent">
                 <!-- Restored mx-auto to center the form wrapper, and added items-center to center the elements inside -->
                 <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col items-center gap-3.75 w-full md:w-[15%] mx-auto text-left">
                     <input type="hidden" name="access_key" value="70626a07-af00-4425-93fe-3429bdb5735f">
@@ -50,20 +39,35 @@
 
                     <!-- Message Field -->
                     <div class="flex flex-col w-full max-w-100">
-                        <label for="message" class="text-primary font-satoshi mb-1 text-[14px]">Message:</label>
+                        <label for="message" class="text-primary font-satoshi mb-1 text-[14px]">Please Describe Your Injury:</label>
                         <textarea name="message" class="p-2.5 border border-border-custom rounded-[5px] bg-transparent text-primary text-[16px] w-50 h-25 resize-none focus:outline-none focus:border-accent transition-colors" required></textarea>
                     </div>
 
                     <!-- Submit Button - Snaps perfectly in line with the inputs above it -->
-                    <button type="submit" class="w-full max-w-25 py-2.5 px-4 text-black mt-2 border-0 rounded-[5px] bg-accent font-bold text-[16px] cursor-pointer transition-all hover:bg-[#85a805]">Submit</button>
+                    <button type="submit" class="w-full max-w-25 py-2.5 px-4 text-bg-light mt-2 border-0 rounded-[5px] bg-accent font-bold text-[16px] cursor-pointer transition-all hover:bg-[#85a805]">Submit</button>
                 </form>
-                <p class="text-[12px] text-border-custom text-center mt-5">Powered by Web3Forms — no data stored beyond delivery.</p>
+                <p class="text-[12px] text-primary text-center mt-5">Powered by Web3Forms - no data stored beyond delivery.</p>
             </section>
         </main>
+        
+        <section class="relative border-t border-accent mt-10">
 
-        <footer>
-            <load src="./footer.html" />
-        </footer>
+            <div class="flex flex-col md:flex-row mx-auto w-full max-w-md md:w-125 mt-8 gap-8 md:gap-0 items-center justify-between">
+                <div class="w-full md:w-[45%] text-center md:mr-10">
+                    <img src="./Assets/whatsapp (4).png" loading="lazy" alt="WhatsApp Contact" class="mx-auto h-20 border rounded-lg object-contain"/>
+                    <p class="text-xl mt-3">+27 83 787 8350</p>
+                </div>
+
+                <div class="w-full md:w-[45%] text-center md:ml-5">
+                    <img src="./Assets/email (1).png" loading="lazy" alt="Email Address" class="mx-auto px-3 h-20 border rounded-lg object-contain"/>
+                    <p class="text-xl mt-3">info@peakperfomance.com</p>
+                </div>  
+            </div>
+        </section>
     </body>
+
+     <footer>
+            <load src="./footer.html" />
+    </footer>
 
 </html>
