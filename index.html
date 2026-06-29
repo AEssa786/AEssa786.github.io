@@ -139,11 +139,15 @@
                 </li>
                 
                 <li class="md:hidden mt-4 w-full px-6 flex flex-col gap-3">
-                    <a href="https://wa.me/+27837878350" target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 bg-accent text-[18px] tracking-wide font-semibold text-primary rounded-full flex items-center justify-center gap-2 hover:bg-bg-dark hover:border hover:border-accent">
+                    <a href="https://wa.me/+27837878350" target="_blank" onclick="gtag('event', 'whatsapp_click');" rel="noopener noreferrer" class="w-full text-center py-2.5 bg-accent text-[18px] tracking-wide font-semibold text-primary rounded-full flex items-center justify-center gap-2 hover:bg-bg-dark hover:border hover:border-accent">
                         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                     </a>
-                    <a href="mailto:contact@abdullahessa.dev" class="w-full text-center py-2.5 bg-transparent border border-zinc-700 text-[18px] tracking-wide font-semibold text-white rounded-full flex items-center justify-center gap-2 hover:bg-zinc-900">
+                    <a href="mailto:contact@abdullahessa.dev" onclick="gtag('event', 'email_click');" class="w-full text-center py-2.5 bg-transparent border border-zinc-700 text-[18px] tracking-wide font-semibold text-white rounded-full flex items-center justify-center gap-2 hover:bg-zinc-900">
                         <i class="fa-regular fa-envelope"></i> Send an Email
+                    </a>
+                    <a href="Assets/AE Systems Business Card.pdf" download="AE-Systems-Business-Card.pdf" class="w-full text-center py-2.5 bg-transparent border border-zinc-700 text-[18px] tracking-wide font-semibold text-white rounded-full flex items-center justify-center gap-2 hover:bg-zinc-900" onclick="gtag('event', 'card_download');">
+                        <i class="fa-solid fa-download text-accent text-lg"></i>
+                        <span>Download Business Card</span>
                     </a>
                 </li>
             </ul>
@@ -158,9 +162,13 @@
                         <i class="fa-brands fa-whatsapp text-accent text-lg"></i>
                         <span>WhatsApp Chat</span>
                     </a>
-                    <a href="mailto:contact@abdullahessa.dev" class="flex items-center gap-3 px-4 py-3 text-zinc-300 hover:bg-zinc-900 hover:text-white transition-colors" onclick="gtag('event', 'email_click');">
+                    <a href="mailto:contact@abdullahessa.dev" class="border-b border-zinc-800/50 flex items-center gap-3 px-4 py-3 text-zinc-300 hover:bg-zinc-900 hover:text-white transition-colors" onclick="gtag('event', 'email_click');">
                         <i class="fa-regular fa-envelope text-accent text-lg"></i>
                         <span>Send an Email</span>
+                    </a>
+                    <a href="Assets/AE Systems Business Card.pdf" download="AE-Systems-Business-Card.pdf" class="flex items-center gap-3 px-4 py-3 text-zinc-300 hover:bg-zinc-900 hover:text-white transition-colors" onclick="gtag('event', 'card_download');">
+                        <i class="fa-solid fa-download text-accent text-lg"></i>
+                        <span>Download Business Card</span>
                     </a>
                 </div>
             </div>   
@@ -187,14 +195,21 @@
                                 <i class="fa-brands fa-whatsapp text-accent text-lg"></i>
                                 <span>Chat on WhatsApp</span>
                             </a>
-                            <a href="mailto:contact@abdullahessa.dev" onclick="gtag('event', 'email_click');" class="flex items-center gap-3 px-4 py-3 text-zinc-300 hover:bg-zinc-900 hover:text-white transition-colors text-[16px] font-sans no-underline">
+                            <a href="mailto:contact@abdullahessa.dev" onclick="gtag('event', 'email_click');" class="flex items-center gap-3 px-4 py-3 text-zinc-300 hover:bg-zinc-900 hover:text-white transition-colors text-[16px] font-sans no-underline border-b border-zinc-800/50">
                                 <i class="fa-regular fa-envelope text-accent text-lg"></i>
                                 <span>Send an Email</span>
+                            </a>
+                            <a href="Assets/AE Systems Business Card.pdf" download="AE-Systems-Business-Card.pdf" class="flex items-center gap-3 px-4 py-3 text-zinc-300 hover:bg-zinc-900 hover:text-white transition-colors" onclick="gtag('event', 'card_download');">
+                                <i class="fa-solid fa-download text-accent text-lg"></i>
+                                <span>Download Business Card</span>
                             </a>
                         </div>
                     </div>
 
                     <div class="flex flex-row md:hidden items-center gap-3 w-full justify-center">
+                        <a href="Assets/AE Systems Business Card.pdf" download="AE-Systems-Business-Card.pdf" onclick="gtag('event', 'card_download');" class="p-3 bg-transparent text-white border border-zinc-700 rounded-full flex items-center justify-center active:scale-95 transition-transform" title="Send an Email">
+                            <i class="fa-solid fa-download text-xl"></i>
+                        </a>
                         <a href="https://wa.me/+27837878350" target="_blank" onclick="gtag('event', 'whatsapp_click');" rel="noopener noreferrer" class="px-5 py-2.5 bg-accent text-lg sm:text-xl font-bold text-primary rounded-full shadow-lg flex items-center gap-2 no-underline active:scale-95 transition-transform">
                             <i class="fa-brands fa-whatsapp text-xl"></i> Let's Chat
                         </a>
@@ -318,6 +333,43 @@
                 <a class="hover:cursor-pointer block text-center" href="https://wa.me/+27837878350" target="_blank">
                     <p class="mx-auto w-full max-w-md md:w-125 mt-10 text-2xl border border-dashed border-accent/30 py-3 rounded-xl md:border-none md:py-0">Contact Me Today To Get Started!</p>
                 </a>
+            </section>
+
+            <section class="py-10">
+                <div class="max-w-xl mb-6 md:mb-8 text-center md:text-left">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-accent">Digital Business Cards</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">
+                        Not Ready for a full Website?
+                    </h2>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-[48%] md:mr-[2%] md:mt-20 md:text-left text-center">
+                        <p class=" text-primary w-full  mx-auto">
+                            Try a Digital Business Card Instead! A premium, custom-styled PDF asset designed to modernize how you network. Perfect for instant sharing over WhatsApp, email, or text messages—completely free of monthly hosting or subscription costs.
+                        </p>
+                        <p class="mt-4 text-primary w-full mx-auto">
+                            What's Included for R800 (One-Time Fee):
+                            <ul class="list-disc ml-10">
+                                <li><strong>Tailored Brand Design: </strong>A vertical mobile-first interface customized to match your company's corporate identity.</li>
+                                <li><strong>One-Click Call Actions: </strong>Built-in native triggers that launch the phone dialer instantly without forcing clients to manually copy your number.</li>
+                                <li><strong>Direct WhatsApp & Email Routing: </strong>Instant chat shortcuts that open communications seamlessly in one tap.</li>
+                                <li><strong>Social & Portfolio Mapping: </strong>Custom buttons linking prospects directly to your Instagram profile, web landing pages, or digital brochures.</li>
+                                <li><strong>Zero Recurring Fees: </strong>Unlike subscription-based platforms, you pay once and own the interactive file forever.</li>
+                            </ul>
+                        </p>
+                        <div class="flex flex-col md:flex-row">
+                            <a href="Assets/AE Systems Business Card.pdf" download="AE-Systems-Business-Card.pdf" class="px-4 py-2 md:px-5 mt-4 md:py-2.5 bg-transparent text-xl sm:text-2xl md:text-[15px] font-semibold tracking-wide text-primary border border-accent rounded-full hover:bg-accent hover:cursor-pointer transition-all no-underline inline-block text-center w-auto">
+                                <span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Download Example</span>
+                            </a> 
+                            <a href="https://wa.me/+27837878350" class="px-4 py-2 md:px-5 mt-4 md:ml-5 md:py-2.5 bg-accent text-xl sm:text-2xl md:text-[15px] font-semibold tracking-wide text-primary border border-accent rounded-full hover:bg-bg-dark hover:cursor-pointer transition-all no-underline inline-block text-center w-auto">
+                                <span class="drop-shadow-[0_1.5px_1.5px_rgba(2,3,8,0.8)]">Contact Me</span>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="md:w-[50%] mt-4">
+                        <img src="Assets/images/image.png" class="h-150">
+                    </div>
+                </div>
             </section>
 
             <!-- Projects Section: Alternate stacking grid system handles full column mobile blocks -->
