@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AE Systems Marketing Poster</title>
+
+<script src="https://kit.fontawesome.com/658a0b1268.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#020308;
+
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.download-btn{
+
+    background:#0284C7;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.download-btn:hover{
+
+    background:#0369a1;
+
+}
+
+.poster{
+
+    width:700px;
+
+    aspect-ratio: 1/1;
+    background:#020308;
+
+    border:1px solid #27272a;
+
+    overflow:hidden;
+
+    position:relative;
+
+    padding:42px;
+
+}
+
+.glow{
+
+    position:absolute;
+
+    right:-180px;
+
+    top:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:#0284C7;
+
+    opacity:.12;
+
+    filter:blur(90px);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:8px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+    margin-bottom:10px;
+
+}
+
+.brand{
+
+    color:#0284C7;
+
+    font-size:18px;
+
+    letter-spacing:.35em;
+
+    font-weight:700;
+
+}
+
+h1{
+
+    margin:16px 0 12px;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:68px;
+
+    line-height:.92;
+
+    letter-spacing:-3px;
+
+    font-weight:800;
+
+}
+
+.showcase{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:-45px;
+
+    margin-bottom:-40px;
+
+    position:relative;
+
+}
+
+.showcase img{
+
+    width:100%;
+
+    max-width:520px;
+
+    display:block;
+
+}
+
+.offer{
+
+    position:absolute;
+
+    top:370px;
+
+    left:35px;
+
+    width:180px;
+
+    border-radius:28px;
+
+    padding:18px;
+
+    z-index:20;
+
+    text-align:center;
+
+    background:#0284C7;
+
+    color:white;
+
+}
+
+.price{
+
+    color:#0284C7;
+
+    font-size:54px;
+
+    font-weight:800;
+
+}
+
+.from{
+
+    color:#94A3B8;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.delivery{
+
+    display:inline-block;
+    position: absolute;
+    top: 285px;
+    right: 35px;
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(2,132,199,.35);
+
+    background:rgba(2,132,199,.08);
+
+    color:#7dd3fc;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.footer{
+
+    position:absolute;
+
+    bottom:28px;
+
+    left:42px;
+
+    right:42px;
+
+    border:none;
+
+    padding:0;
+
+}
+
+.website{
+
+    color:#0284C7;
+
+    font-size:24px;
+
+    font-family:monospace;
+
+}
+
+.qr{
+
+    width:78px;
+
+    height:78px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button class="download-btn" onclick="downloadPoster()">
+Download Poster
+</button>
+
+<div id="poster">
+
+<div class="poster">
+
+<div class="glow"></div>
+
+<div class="logo">
+
+    <!-- Replace with your logo -->
+    <img src="data:image/webp;base64,UklGRr4DAABXRUJQVlA4ILIDAACwFwCdASp5AGUAPpFCm0klpCKhKvXqYLASCUAZ8fu+HR2zICcRDQfmDeZebCmPo3LifezGYDD3Y0WmXIpfBBBgVXpdiU17JDxChnDVUp7YaD3mebSRFesuicHipDaMcH0q9CyvYFZ28sFuhbvYsdYPOQH6we6kSRx/9KLXLPvTF/3ta545TupWHqBy6aEB/HKsPXGtaVNofNZLP5SzjOGeZ4YRKfxCh6gl7jQtz+nmUQ5VGTrK2HNs/oH0S9rWMX/BaCikSAAA/vtVmloWXAsZ/M1uEY3CF0ZMEIaanuLWrmGmtsaq9zA7Gk9p9XYAqLt2zz9xOz0qJbMZChdhz6taYSvrFKX5or8Fwgbbx46gafgRcLqTfm8ZFqQxERnDzkLn/BRdh9D8M984y7RL+Izp11cJ6oyDxcW9MF2VZMd1tGIIWWf/OO2ssu94EBoJGeJRTj23e0u9J91a2hJC67a85p56FC5FqOKV6cMAM2bcE2H2C63RjrwPa6SeFaqNRPT61Drv7TFWvplbn5h3sQC6ZmY/ZP3fKsipS8eKMVns0ORkqE0TJ1qZEarKnunRB1QWWZa0C10dZJfMxsyNz/eDVc13r6O5vZIsuMDq5nlvRu9f3NSqHj6deAI4Yp+QgBmxtEmmTvYn9f8xnbH808/fZlmMlrtg+eQ+sjNKbVVx/wJYIb+OMJU7uqLKETkDHTCLPiwC90TUoyhqGJzpMbvGaLjqaXR3Y1uTMk+06G0qv5Np7DJK82t+21c0Yr7qPj1f9lgzlLblKz0FaQRezv1QE1UtdUeCaUHI8BR5fDrCkfIbr67/uX6vKZohpR23ILPEzGoHTFhzce5gwNx1Y0syKDtyn9JkHtj8rL+vD1edzaej4RAwHE+0qMOWsid0RzZpa7goEGU4wJzb9thrOwhMHiuQE8YAGc6zaTXiciIsPRvCdBg72sBV0et3MN1hwiq1pMZqeMIDUh4Mo7oq4+PGbdlADu35CQqXOsdCuQEw1+1BfGsYvxH+eqXE/Ru6eKjLxQm7C/ZYEk/yF/vsnxKJB6fFlj0ZRnqWe2XyF9uEqX1uY58YEk3XN+kMbbNe9sBDqnIqMjWAlq6CRBuQQvO15JQRKtDqnEzZtrnJW1bskSBb4HBm24Us6bButatRPaK8D0jnUeKuDZXFWl4ofSj1GK0FIX+iZAREm/7ej6rMlFiFpa185ulw5JT2mZJQabJg100qVLAadHLb2tz5rh1WUirmTVVlkTBc+yJ6GDyNIAAA" alt="AE Systems">
+
+    <div class="brand">
+        AE SYSTEMS
+    </div>
+
+</div>
+
+<h1>
+
+YOUR BUSINESS<br>
+
+DESERVES A<br>
+
+WEBSITE
+
+</h1>
+
+<div class="showcase">
+
+    <!-- Replace with your website mockup -->
+
+    <img src="/assets/modern-browser-mockup-BA5-hrGI.png" alt="Website Mockup">
+
+</div>
+
+<div class="offer">
+
+    <div class="from">
+
+        Websites from
+
+    </div>
+
+    <div class="price">
+
+        R2 500
+
+    </div>
+
+    <div class="delivery">
+
+        Delivered in as little as 7 days*
+
+    </div>
+
+</div>
+
+<div class="footer">
+
+    <div class="website">
+
+        abdullahessa.dev
+
+    </div>
+
+    <img
+        src="/assets/qr-Bz-YHzYa.webp"
+        class="qr"
+        alt="QR Code">
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function downloadPoster(){
+
+    html2canvas(document.getElementById("poster"),{
+
+        scale:2,
+
+        useCORS:true
+
+    }).then(canvas=>{
+
+        const link=document.createElement("a");
+
+        link.download="AE_Marketing_Poster.png";
+
+        link.href=canvas.toDataURL();
+
+        link.click();
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>

@@ -11,7 +11,8 @@ export default defineConfig({
     rollupOptions:{
         input: {
             main: "index.html",
-            poster: "poster.html",
+            adPoster: "adPoster.html",
+            salesPoster: "salesPoster.html",
 
             portfolio: "Portfolio/index.html",
             portfolio_projects: "Portfolio/projects.html",
