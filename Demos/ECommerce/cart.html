@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en_ZA">
+
+    <head>
+        <title>Retail Site Demo</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMKKQ7JEHH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WMKKQ7JEHH');
+        </script>
+    </head>
+
+    <body class="">
+        <nav>
+            <div id="nav-placeholder"></div>
+            <load src="./nav.html" />
+        </nav>
+
+        <section class="bg-background">
+
+    <div class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="mb-12">
+
+            <h1 class="text-5xl font-bold text-text">
+                Shopping Cart
+            </h1>
+
+            <p class="text-text-muted mt-3">
+                You have <span class="font-semibold text-primary">2 items</span> in your cart.
+            </p>
+
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-10">
+
+            <!-- Cart Items -->
+            <div class="lg:col-span-2 space-y-6">
+
+                <!-- Product 1 -->
+                <div class="bg-surface rounded-3xl shadow-md p-6 flex flex-col sm:flex-row gap-6 items-center">
+
+                    <img
+                        src="Assets/redicul-pict-T_8gjuk1Weo-unsplash.jpg"
+                        class="w-32 h-32 rounded-2xl object-cover">
+
+                    <div class="flex-1">
+
+                        <p class="text-sm text-text-muted">
+                            Clothing
+                        </p>
+
+                        <h2 class="text-2xl font-semibold text-text mt-1">
+                            Printed Hoodie
+                        </h2>
+
+                        <p class="text-primary text-xl font-bold mt-3">
+                            R799
+                        </p>
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <button class="w-10 h-10 rounded-full border border-border hover:bg-primary hover:text-white transition">
+                            -
+                        </button>
+
+                        <span class="font-semibold text-lg">
+                            1
+                        </span>
+
+                        <button class="w-10 h-10 rounded-full border border-border hover:bg-primary hover:text-white transition">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-surface rounded-3xl shadow-md p-6 flex flex-col sm:flex-row gap-6 items-center">
+
+                    <img
+                        src="Assets/insung-yoon-pCLu1XhmGiU-unsplash.jpg"
+                        class="w-32 h-32 rounded-2xl object-cover">
+
+                    <div class="flex-1">
+
+                        <p class="text-sm text-text-muted">
+                            Electronics
+                        </p>
+
+                        <h2 class="text-2xl font-semibold text-text mt-1">
+                            Apple Airpods
+                        </h2>
+
+                        <p class="text-primary text-xl font-bold mt-3">
+                            R2,500
+                        </p>
+
+                    </div>
+
+                    <div class="flex items-center gap-3">
+
+                        <button class="w-10 h-10 rounded-full border border-border hover:bg-primary hover:text-white transition">
+                            -
+                        </button>
+
+                        <span class="font-semibold text-lg">
+                            1
+                        </span>
+
+                        <button class="w-10 h-10 rounded-full border border-border hover:bg-primary hover:text-white transition">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Summary -->
+            <div>
+
+                <div class="sticky top-28 bg-surface rounded-3xl shadow-md p-8">
+
+                    <h2 class="text-2xl font-bold text-text">
+                        Order Summary
+                    </h2>
+
+                    <div class="mt-8 space-y-4">
+
+                        <div class="flex justify-between">
+                            <span class="text-text-muted">Subtotal</span>
+                            <span>R3,299</span>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <span class="text-text-muted">Shipping</span>
+                            <span class="text-primary font-medium">
+                                FREE
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <span class="text-text-muted">VAT</span>
+                            <span>Included</span>
+                        </div>
+
+                        <hr class="border-border my-4">
+
+                        <div class="flex justify-between text-2xl font-bold">
+
+                            <span>Total</span>
+
+                            <span class="text-primary">
+                                R3,299
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="mt-8 w-full bg-primary hover:bg-primary-hover transition text-white py-4 rounded-full text-lg font-semibold">
+
+                        Proceed to Checkout
+
+                    </button>
+
+                    <a href="shop.html"
+                        class="block text-center mt-5 text-primary hover:underline">
+
+                        Continue Shopping
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <div>
+            <load src="./footer.html" />
+        </div>
+    </body>
+    
+</html>
