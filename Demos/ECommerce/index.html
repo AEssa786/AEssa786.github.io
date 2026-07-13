@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en_ZA">
+
+    <head>
+        <title>Retail Site Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMKKQ7JEHH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WMKKQ7JEHH');
+        </script>
+      <link rel="stylesheet" crossorigin href="/assets/style-00UXh1cv.css">
+    </head>
+
+    <body class="">
+        <nav>
+            <div id="nav-placeholder"></div>
+            <nav class="sticky top-0 z-50 w-full bg-primary shadow-lg">
+
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+        <!-- Logo -->
+        <a href="index.html" class="text-3xl font-bold tracking-tight text-white z-50">
+            Market<span class="text-accent">.</span>
+        </a>
+
+        <!-- Mobile Controls -->
+        <div class="flex items-center gap-4 md:hidden z-50">
+
+            <!-- Cart -->
+            <a href="cart.html" class="relative">
+
+                <div class="bg-white rounded-full p-2">
+
+                    <img
+                        src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M7.5%2018C8.32843%2018%209%2018.6716%209%2019.5C9%2020.3284%208.32843%2021%207.5%2021C6.67157%2021%206%2020.3284%206%2019.5C6%2018.6716%206.67157%2018%207.5%2018Z'%20stroke='%23059669'%20stroke-width='1.5'/%3e%3cpath%20d='M16.5%2018.0001C17.3284%2018.0001%2018%2018.6716%2018%2019.5001C18%2020.3285%2017.3284%2021.0001%2016.5%2021.0001C15.6716%2021.0001%2015%2020.3285%2015%2019.5001C15%2018.6716%2015.6716%2018.0001%2016.5%2018.0001Z'%20stroke='%23059669'%20stroke-width='1.5'/%3e%3cpath%20d='M2%203L2.26121%203.09184C3.5628%203.54945%204.2136%203.77826%204.58584%204.32298C4.95808%204.86771%204.95808%205.59126%204.95808%207.03836V9.76C4.95808%2012.7016%205.02132%2013.6723%205.88772%2014.5862C6.75412%2015.5%208.14857%2015.5%2010.9375%2015.5H12M16.2404%2015.5C17.8014%2015.5%2018.5819%2015.5%2019.1336%2015.0504C19.6853%2014.6008%2019.8429%2013.8364%2020.158%2012.3075L20.6578%209.88275C21.0049%208.14369%2021.1784%207.27417%2020.7345%206.69708C20.2906%206.12%2018.7738%206.12%2017.0888%206.12H11.0235M4.95808%206.12H7'%20stroke='%23059669'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e"
+                        class="h-6 w-6">
+
+                </div>
+
+                <span class="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-white text-xs font-semibold">
+                    2
+                </span>
+
+            </a>
+
+            <!-- Hamburger -->
+            <label for="menu-toggle" class="cursor-pointer text-white">
+
+                <svg class="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24">
+
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+
+                </svg>
+
+            </label>
+
+        </div>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center gap-8">
+
+            <li><a href="index.html" class="text-white hover:text-accent font-semibold text-2xl transition">Home</a></li>
+            <li><a href="shop.html" class="text-white hover:text-accent font-semibold text-2xl transition">Shop</a></li>
+
+
+
+        </ul>
+
+        <!-- Desktop Right Side -->
+        <div class="hidden md:flex items-center gap-5">
+
+            <!-- Search -->
+            <div class="relative">
+
+                <input
+                    type="text"
+                    placeholder="Search products..."
+                    class="w-64 rounded-full bg-white py-2 pl-10 pr-4 text-text outline-none">
+
+                <svg class="absolute left-3 top-2.5 h-5 w-5 text-text-muted"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24">
+
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 21l-4.35-4.35M16 10.5A5.5 5.5 0 115 10.5a5.5 5.5 0 0111 0z"/>
+
+                </svg>
+
+            </div>
+
+            <!-- Cart -->
+            <a href="cart.html"
+                class="relative flex items-center gap-3 rounded-full bg-white px-5 py-2 font-medium text-primary transition hover:scale-105">
+
+                <img
+                    src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M7.5%2018C8.32843%2018%209%2018.6716%209%2019.5C9%2020.3284%208.32843%2021%207.5%2021C6.67157%2021%206%2020.3284%206%2019.5C6%2018.6716%206.67157%2018%207.5%2018Z'%20stroke='%23059669'%20stroke-width='1.5'/%3e%3cpath%20d='M16.5%2018.0001C17.3284%2018.0001%2018%2018.6716%2018%2019.5001C18%2020.3285%2017.3284%2021.0001%2016.5%2021.0001C15.6716%2021.0001%2015%2020.3285%2015%2019.5001C15%2018.6716%2015.6716%2018.0001%2016.5%2018.0001Z'%20stroke='%23059669'%20stroke-width='1.5'/%3e%3cpath%20d='M2%203L2.26121%203.09184C3.5628%203.54945%204.2136%203.77826%204.58584%204.32298C4.95808%204.86771%204.95808%205.59126%204.95808%207.03836V9.76C4.95808%2012.7016%205.02132%2013.6723%205.88772%2014.5862C6.75412%2015.5%208.14857%2015.5%2010.9375%2015.5H12M16.2404%2015.5C17.8014%2015.5%2018.5819%2015.5%2019.1336%2015.0504C19.6853%2014.6008%2019.8429%2013.8364%2020.158%2012.3075L20.6578%209.88275C21.0049%208.14369%2021.1784%207.27417%2020.7345%206.69708C20.2906%206.12%2018.7738%206.12%2017.0888%206.12H11.0235M4.95808%206.12H7'%20stroke='%23059669'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e"
+                    class="h-6 w-6">
+
+                <span>Cart</span>
+
+                <span class="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-white text-sm">
+                    2
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="hidden peer-checked:flex md:hidden flex-col gap-5 bg-primary border-t border-white/20 px-6 py-6">
+
+        <li><a href="index.html" class="text-white hover:text-accent">Home</a></li>
+        <li><a href="shop.html" class="text-white hover:text-accent">Shop</a></li>
+
+
+        <!-- Search -->
+        <li>
+
+            <input
+                type="text"
+                placeholder="Search products..."
+                class="w-full rounded-full bg-white px-4 py-3 text-text outline-none">
+
+        </li>
+
+        <!-- Mobile Cart -->
+        <li>
+
+            <a href="cart.html"
+                class="flex items-center justify-center gap-3 rounded-full bg-white py-3 font-semibold text-primary">
+
+                <img
+                    src="data:image/svg+xml,%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Transformed%20by:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'/%3e%3cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20id='SVGRepo_iconCarrier'%3e%3cpath%20d='M7.5%2018C8.32843%2018%209%2018.6716%209%2019.5C9%2020.3284%208.32843%2021%207.5%2021C6.67157%2021%206%2020.3284%206%2019.5C6%2018.6716%206.67157%2018%207.5%2018Z'%20stroke='%23059669'%20stroke-width='1.5'/%3e%3cpath%20d='M16.5%2018.0001C17.3284%2018.0001%2018%2018.6716%2018%2019.5001C18%2020.3285%2017.3284%2021.0001%2016.5%2021.0001C15.6716%2021.0001%2015%2020.3285%2015%2019.5001C15%2018.6716%2015.6716%2018.0001%2016.5%2018.0001Z'%20stroke='%23059669'%20stroke-width='1.5'/%3e%3cpath%20d='M2%203L2.26121%203.09184C3.5628%203.54945%204.2136%203.77826%204.58584%204.32298C4.95808%204.86771%204.95808%205.59126%204.95808%207.03836V9.76C4.95808%2012.7016%205.02132%2013.6723%205.88772%2014.5862C6.75412%2015.5%208.14857%2015.5%2010.9375%2015.5H12M16.2404%2015.5C17.8014%2015.5%2018.5819%2015.5%2019.1336%2015.0504C19.6853%2014.6008%2019.8429%2013.8364%2020.158%2012.3075L20.6578%209.88275C21.0049%208.14369%2021.1784%207.27417%2020.7345%206.69708C20.2906%206.12%2018.7738%206.12%2017.0888%206.12H11.0235M4.95808%206.12H7'%20stroke='%23059669'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3c/g%3e%3c/svg%3e"
+                    class="h-6 w-6">
+
+                <span>View Cart (2)</span>
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</nav>
+        </nav>
+
+        <section class="bg-background">
+
+            <div class="max-w-7xl mx-auto px-6 py-20 lg:py-28">
+
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                    <!-- Left -->
+                    <div>
+
+                        <span class=" bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full w-fit mb-6 flex flex-row">
+                            <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%201024%201024'%20class='icon'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M541.44%20103.68l126.72%20256%20282.88%2042.24-204.8%20198.4L794.88%20883.2%20541.44%20750.08%20288%20883.2l48.64-282.88-204.8-198.4%20282.88-42.24z'%20fill='%23B8CA43'%20/%3e%3cpath%20d='M794.88%20896c-2.56%200-3.84%200-6.4-1.28L541.44%20764.16%20294.4%20894.72c-3.84%202.56-8.96%201.28-14.08-1.28-3.84-2.56-6.4-7.68-5.12-12.8l47.36-275.2L122.88%20410.88c-3.84-3.84-5.12-8.96-3.84-12.8s5.12-7.68%2010.24-8.96l276.48-39.68%20124.16-250.88c3.84-8.96%2019.2-8.96%2023.04%200l124.16%20250.88%20276.48%2039.68c5.12%201.28%208.96%203.84%2010.24%208.96%201.28%205.12%200%2010.24-3.84%2012.8L760.32%20605.44l47.36%20275.2c1.28%205.12-1.28%2010.24-5.12%2012.8-2.56%201.28-5.12%202.56-7.68%202.56zM541.44%20737.28c2.56%200%203.84%200%206.4%201.28l230.4%20121.6-43.52-256c-1.28-3.84%201.28-8.96%203.84-11.52l185.6-181.76-257.28-37.12c-3.84%200-7.68-3.84-10.24-6.4l-115.2-232.96-115.2%20232.96c-1.28%203.84-5.12%206.4-10.24%206.4l-257.28%2037.12L345.6%20591.36c2.56%202.56%203.84%207.68%203.84%2011.52l-43.52%20256%20230.4-121.6h5.12z'%20fill='%23231C1C'%20/%3e%3c/svg%3e" class="h-8 mr-2"> New Collection 2026
+                        </span>
+
+                        <h1 class="text-5xl lg:text-7xl font-extrabold text-text leading-tight">
+                            Everything You Need,
+                            <span class="text-primary">
+                                All In One Place.
+                            </span>
+                        </h1>
+
+                        <p class="text-text-muted text-lg mt-8 max-w-xl leading-8">
+                            Shop premium products carefully selected for quality,
+                            style and everyday value. Discover new arrivals,
+                            exclusive offers and customer favourites.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 mt-10">
+
+                            <a href="shop.html"
+                                class="bg-primary hover:bg-primary-hover transition text-white px-8 py-4 rounded-full font-semibold text-center">
+
+                                Shop Now
+
+                            </a>
+
+                            <a href="#"
+                                class="border border-border hover:border-primary hover:text-primary transition px-8 py-4 rounded-full font-semibold text-center">
+
+                                Browse Categories
+
+                            </a>
+
+                        </div>
+
+                        <!-- Stats -->
+
+                        <div class="flex flex-wrap gap-10 mt-14">
+
+                            <div>
+                                <h3 class="text-3xl font-bold text-text">Fast</h3>
+                                <p class="text-text-muted">Delivery</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-3xl font-bold text-text">Easy</h3>
+                                <p class="text-text-muted">Returns</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-3xl font-bold text-text flex flex-row">Secure</h3>
+                                <p class="text-text-muted">Payments</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Right -->
+
+                    <div class="relative">
+
+                        <!-- Decorative Blob -->
+                        <div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl scale-90"></div>
+
+                        <img
+                            src="/assets/eduardo-soares-QsYXYSwV3NU-unsplash-gqhjaZZH.jpg"
+                            alt="Shopping Collection"
+                            class="relative z-10 w-full rounded-3xl shadow-2xl object-cover">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="py-20 bg-surface">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-14">
+
+                    <span class="text-primary font-semibold uppercase tracking-wider">
+                        Categories
+                    </span>
+
+                    <h2 class="text-4xl font-bold text-text mt-2">
+                        Shop by Category
+                    </h2>
+
+                    <p class="text-text-muted mt-4 max-w-2xl mx-auto">
+                        Browse our carefully curated collections and discover products
+                        tailored to your lifestyle.
+                    </p>
+
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Card -->
+                    <a href="#" class="group relative overflow-hidden rounded-3xl shadow-lg">
+
+                        <img src="/assets/moses-janga-WV80-Rf-a3A-unsplash-DvaSzlQy.jpg"
+                            class="h-96 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                        <div class="absolute bottom-6 left-6">
+
+                            <h3 class="text-2xl font-bold text-white">
+                                Clothing
+                            </h3>
+
+                            <p class="text-white/80 mt-1">
+                                Shop Now
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Repeat -->
+
+                    <a href="#" class="group relative overflow-hidden rounded-3xl shadow-lg">
+
+                        <img src="/assets/mojtaba-fahiminia-t4g1gctAaKk-unsplash-3Y2uBtL_.jpg"
+                            class="h-96 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                        <div class="absolute bottom-6 left-6">
+
+                            <h3 class="text-2xl font-bold text-white">
+                                Footwear
+                            </h3>
+
+                            <p class="text-white/80 mt-1">
+                                Shop Now
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#" class="group relative overflow-hidden rounded-3xl shadow-lg">
+
+                        <img src="/assets/valentina-schick-9AS2t3rgGko-unsplash-pV9T3Z_J.jpg"
+                            class="h-96 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                        <div class="absolute bottom-6 left-6">
+
+                            <h3 class="text-2xl font-bold text-white">
+                                Accessories
+                            </h3>
+
+                            <p class="text-white/80 mt-1">
+                                Shop Now
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#" class="group relative overflow-hidden rounded-3xl shadow-lg">
+
+                        <img src="/assets/michael-soledad-dJt4lxWy5nk-unsplash-CEAAqyWK.jpg"
+                            class="h-96 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                        <div class="absolute bottom-6 left-6">
+
+                            <h3 class="text-2xl font-bold text-white">
+                                Electronics
+                            </h3>
+
+                            <p class="text-white/80 mt-1">
+                                Shop Now
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="py-20 bg-background">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Heading -->
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+
+                    <div>
+
+                        <span class="text-primary font-semibold uppercase tracking-wider">
+                            Featured
+                        </span>
+
+                        <h2 class="text-4xl font-bold text-text mt-2">
+                            Featured Products
+                        </h2>
+
+                        <p class="text-text-muted mt-3 max-w-xl">
+                            Discover some of our most popular products, carefully selected
+                            for quality, style and everyday value.
+                        </p>
+
+                    </div>
+
+                    <a href="shop.html"
+                        class="text-primary font-semibold hover:underline">
+                        View All Products
+                    </a>
+
+                </div>
+
+                <!-- Products -->
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Product -->
+
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                        <div class="relative overflow-hidden">
+
+                            <img src="/assets/redicul-pict-T_8gjuk1Weo-unsplash-Bptzfb7F.jpg"
+                                class="h-72 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                            <span class="absolute top-4 left-4 bg-accent text-white text-sm px-3 py-1 rounded-full">
+                                SALE
+                            </span>
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <p class="text-sm text-text-muted">
+                                Clothing
+                            </p>
+
+                            <h3 class="text-xl font-semibold text-text mt-1">
+                                Printed Hoodie
+                            </h3>
+
+                            
+
+                            <div class="flex items-center gap-3 mt-4">
+
+                                <span class="text-2xl font-bold text-primary">
+                                    R799
+                                </span>
+
+                                <span class="line-through text-text-muted">
+                                    R999
+                                </span>
+
+                            </div>
+
+                            <button class="mt-6 w-full bg-primary hover:bg-primary-hover text-white py-3 rounded-full font-semibold transition">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                        <div class="relative overflow-hidden">
+
+                            <img src="/assets/angel-monsanto-iii-0wzyDMY8gCo-unsplash-DBSviZUp.jpg"
+                                class="h-72 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                            <span class="absolute top-4 left-4 bg-accent text-white text-sm px-3 py-1 rounded-full">
+                                SALE
+                            </span>
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <p class="text-sm text-text-muted">
+                                Accessories
+                            </p>
+
+                            <h3 class="text-xl font-semibold text-text mt-1">
+                                Styled Cap
+                            </h3>
+
+                            
+
+                            <div class="flex items-center gap-3 mt-4">
+
+                                <span class="text-2xl font-bold text-primary">
+                                    R100
+                                </span>
+
+                                <span class="line-through text-text-muted">
+                                    R150
+                                </span>
+
+                            </div>
+
+                            <button class="mt-6 w-full bg-primary hover:bg-primary-hover text-white py-3 rounded-full font-semibold transition">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                        <div class="relative overflow-hidden">
+
+                            <img src="/assets/vetrivel-viswanathar-LkR6zTayf-o-unsplash-glzuf1_7.jpg"
+                                class="h-72 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                            <span class="absolute top-4 left-4 bg-accent text-white text-sm px-3 py-1 rounded-full">
+                                SALE
+                            </span>
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <p class="text-sm text-text-muted">
+                                Clothing
+                            </p>
+
+                            <h3 class="text-xl font-semibold text-text mt-1">
+                                Formal Blazor
+                            </h3>
+
+                            
+
+                            <div class="flex items-center gap-3 mt-4">
+
+                                <span class="text-2xl font-bold text-primary">
+                                    R900
+                                </span>
+
+                                <span class="line-through text-text-muted">
+                                    R1,200
+                                </span>
+
+                            </div>
+
+                            <button class="mt-6 w-full bg-primary hover:bg-primary-hover text-white py-3 rounded-full font-semibold transition">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                        <div class="relative overflow-hidden">
+
+                            <img src="/assets/insung-yoon-pCLu1XhmGiU-unsplash-C8QEEWmQ.jpg"
+                                class="h-72 w-full object-cover transition duration-500 group-hover:scale-110">
+
+                            <span class="absolute top-4 left-4 bg-accent text-white text-sm px-3 py-1 rounded-full">
+                                SALE
+                            </span>
+
+                        </div>
+
+                        <div class="p-6">
+
+                            <p class="text-sm text-text-muted">
+                                Electronics
+                            </p>
+
+                            <h3 class="text-xl font-semibold text-text mt-1">
+                                Apple Airpods
+                            </h3>
+
+                            
+
+                            <div class="flex items-center gap-3 mt-4">
+
+                                <span class="text-2xl font-bold text-primary">
+                                    R2,500
+                                </span>
+
+                                <span class="line-through text-text-muted">
+                                    R3,000
+                                </span>
+
+                            </div>
+
+                            <button class="mt-6 w-full bg-primary hover:bg-primary-hover text-white py-3 rounded-full font-semibold transition">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Repeat card 3 more times -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="relative overflow-hidden rounded-4xl">
+
+            <!-- Background -->
+            <img
+                src="/assets/clark-street-mercantile-qnKhZJPKFD8-unsplash-j0a9ctBv.jpg"
+                alt="Sale Banner"
+                class="absolute inset-0 h-full w-full object-cover">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/55"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 flex items-center min-h-112.5">
+
+                <div class="max-w-xl p-12 lg:p-20">
+
+                    <span class="inline-block bg-accent text-white px-4 py-2 rounded-full font-semibold mb-6">
+                        Limited Time Offer
+                    </span>
+
+                    <h2 class="text-5xl font-bold text-white leading-tight">
+                        Mid-Year Sale
+                        <br>
+                        Up To 40% Off
+                    </h2>
+
+                    <p class="mt-6 text-lg text-gray-200 leading-8">
+                        Discover incredible savings on selected products.
+                        Refresh your collection with premium quality at
+                        unbeatable prices.
+                    </p>
+
+                    <a href="shop.html"
+                        class="inline-block mt-10 bg-primary hover:bg-primary-hover transition px-8 py-4 rounded-full text-white font-semibold">
+
+                        Shop the Sale
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <div>
+            <footer class="bg-text text-white mt-20">
+
+    <div class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+
+            <!-- Brand -->
+            <div>
+
+                <h2 class="text-3xl font-bold text-white">
+                    Market<span class="text-accent">.</span>
+                </h2>
+
+                <p class="mt-5 text-gray-300 leading-7">
+                    Your destination for quality products, unbeatable prices,
+                    and a seamless online shopping experience.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3 class="text-xl font-semibold mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="index.html" class="text-gray-300 hover:text-accent transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html" class="text-gray-300 hover:text-accent transition">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html" class="text-gray-300 hover:text-accent transition">
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="text-gray-300 hover:text-accent transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="text-gray-300 hover:text-accent transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Categories -->
+            <div>
+
+                <h3 class="text-xl font-semibold mb-5">
+                    Shop
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-accent transition">
+                            Clothing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-accent transition">
+                            Footwear
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-accent transition">
+                            Accessories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-accent transition">
+                            Electronics
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div>
+
+                <h3 class="text-xl font-semibold mb-5">
+                    Contact
+                </h3>
+
+                <ul class="space-y-4 text-gray-300">
+
+                    <li>
+                         123 Market Street<br>
+                        Johannesburg, South Africa
+                    </li>
+
+                    <li>
+                         +27 11 123 4567
+                    </li>
+
+                    <li>
+                         info@market.co.za
+                    </li>
+
+                    <li>
+                        Mon - Fri<br>
+                        08:00 - 17:00
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+
+        <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <p class="text-gray-400 text-sm">
+                 2026 Market. All rights reserved.
+            </p>
+
+            <div class="flex gap-6 text-gray-400">
+
+                <a href="#" class="hover:text-accent transition">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="hover:text-accent transition">
+                    Terms of Service
+                </a>
+                
+
+            </div>
+            <p class="text-xs text-gray-500 mt-2">
+                    Demo ecommerce website for portfolio purposes.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+        </div>
+
+    </body>
+</html>
