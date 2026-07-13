@@ -30,6 +30,10 @@ export default defineConfig({
           physioServices: "Demos/Physio/services.html",
           physioContact: "Demos/Physio/contact.html",
           physioAbout: "Demos/Physio/about.html",
+          
+          ecomHome: "Demos/ECommerce/index.html",
+          ecomStore: "Demos/ECommerce/shop.html",
+          ecomCart: "Demos/ECommerce/cart.html",
 
         }
     }
